@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ralf1q — Changelog</title>
+  <meta name="description" content="Tool updates and changes." />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body class="page-wide">
+  <div class="fx" aria-hidden="true">
+    <canvas id="particles"></canvas>
+    <div class="scanlines"></div>
+    <div class="noise"></div>
+  </div>
+
+  <header>
+    <div class="nav">
+      <div class="brand">
+        <span class="mark"></span>
+        <a href="/home/">RALF1Q</a>
+      </div>
+      <nav class="links">
+        <a data-nav href="/home/">Home</a>
+        <a data-nav href="/tools/">Tools</a>
+        <a data-nav href="/changelog/">Changelog</a>
+        <a data-nav href="/about/">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="stack">
+      <!-- Big page header -->
+      <section class="card section page-title reveal">
+        <h1>Changelog</h1>
+        <p class="small">Updates to tools and site — kept short, but not tiny.</p>
+      </section>
+
+      <!-- Wide layout: feed + pinned panel -->
+      <section class="log-grid reveal">
+        <!-- LEFT: main feed -->
+        <div class="log">
+          <article class="log-item">
+            <div class="log-top">
+              <div class="tag">2026-02-24</div>
+              <div class="meta">PC Cleanup + Health Checks · v1.0</div>
+            </div>
+            <ul>
+              <li>Menu cleanup: Temp, Windows Temp, Prefetch, Recycle Bin.</li>
+              <li>Added Defender: signature update + quick/full scan.</li>
+              <li>Added Windows Update scan shortcut (drivers via Optional updates).</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- RIGHT: pinned panel -->
+        <aside class="card section pinned">
+          <h2>Latest</h2>
+          <p class="small">
+            <strong>PC Cleanup + Health Checks</strong><br/>
+            v1.0 · 2026-02-24
+          </p>
+          <div class="hr"></div>
+          <p class="small">
+            Want the newest build?<br/>
+            Go to <a href="/tools/">Tools</a> and download the latest file.
+          </p>
+          <div class="hr"></div>
+          <p class="small">
+            Next planned: more checks + better logging (optional).
+          </p>
+        </aside>
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER (same as all pages) - outside main -->
+  <footer class="footer-block reveal">
+    <div class="footer-grid">
+      <nav class="footer-tabs left" aria-label="Footer navigation left">
+        <a class="footer-tab" data-nav href="/home/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 10.5l9-7 9 7"></path>
+            <path d="M9 22V12h6v10"></path>
+          </svg>
+          Home
+        </a>
+        <a class="footer-tab" data-nav href="/tools/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 3v12"></path>
+            <path d="M7 10l5 5 5-5"></path>
+            <path d="M5 21h14"></path>
+          </svg>
+          Tools
+        </a>
+      </nav>
+
+      <div class="footer-center">© 2026 RALF1Q — ALL RIGHTS RESERVED</div>
+
+      <nav class="footer-tabs right" aria-label="Footer navigation right">
+        <a class="footer-tab" data-nav href="/changelog/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 19V5"></path>
+            <path d="M8 19V9"></path>
+            <path d="M12 19v-7"></path>
+            <path d="M16 19v-4"></path>
+            <path d="M20 19V7"></path>
+          </svg>
+          Changelog
+        </a>
+        <a class="footer-tab" data-nav href="/about/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 12h.01"></path>
+            <path d="M12 16v-4"></path>
+            <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"></path>
+          </svg>
+          About
+        </a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>

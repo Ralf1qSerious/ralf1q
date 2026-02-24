@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ralf1q — PC Lab</title>
+  <meta name="description" content="ralf1q: PC enthusiast, Windows tools, minimal techy projects." />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="fx" aria-hidden="true">
+    <canvas id="particles"></canvas>
+    <div class="scanlines"></div>
+    <div class="noise"></div>
+  </div>
+
+  <header>
+    <div class="nav">
+      <div class="brand">
+        <span class="mark"></span>
+        <a href="/home/">RALF1Q</a>
+      </div>
+      <nav class="links">
+        <a data-nav href="/home/">Home</a>
+        <a data-nav href="/tools/">Tools</a>
+        <a data-nav href="/changelog/">Changelog</a>
+        <a data-nav href="/about/">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="stack">
+      <section class="hero">
+        <div class="hero-grid">
+          <div class="card hero-main reveal">
+            <div class="kicker">
+              <span class="pill hot">WIN10/11</span>
+              <span class="pill">PC ENTHUSIAST</span>
+              <span class="pill">CODING</span>
+            </div>
+
+            <h1 class="h1">
+              <span class="glitch" data-text="Tools. Tweaks. Clean builds.">Tools. Tweaks. Clean builds.</span>
+            </h1>
+
+            <p class="sub">
+              I’m <strong>ralf1q</strong>. I build PCs, tune Windows, and ship small utilities
+              that are easy to read, easy to run, and easy to undo.
+            </p>
+
+            <div class="actions">
+              <a class="btn primary" href="/tools/">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path>
+                </svg>
+                Open tools
+              </a>
+              <a class="btn" href="/changelog/">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 19V5"></path><path d="M8 19V9"></path><path d="M12 19v-7"></path><path d="M16 19v-4"></path><path d="M20 19V7"></path>
+                </svg>
+                Changelog
+              </a>
+              <a class="btn" href="/about/">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 12h.01"></path><path d="M12 16v-4"></path>
+                  <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"></path>
+                </svg>
+                About
+              </a>
+            </div>
+
+            <div class="terminal" data-terminal>
+              <div class="term-top">
+                <div class="term-dots">
+                  <span class="dot"></span><span class="dot"></span><span class="dot c"></span>
+                </div>
+                <div class="term-title">ralf1q / console</div>
+              </div>
+              <div class="term-body">
+                <div data-term-out></div>
+                <span class="caret"></span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="card side reveal">
+            <div class="spec">
+              <div class="label">LAB MODE</div>
+              <div class="value">Minimal / Techy</div>
+              <div class="mini">No fluff. Tools + notes that actually help.</div>
+            </div>
+            <div class="spec">
+              <div class="label">BUILD STYLE</div>
+              <div class="value">Hardware-first</div>
+              <div class="mini">Spec-card mindset: measurable + reversible tweaks.</div>
+            </div>
+            <div class="spec">
+              <div class="label">TOOLS</div>
+              <div class="value">Inspectable scripts</div>
+              <div class="mini">Batch + PowerShell you can read before running.</div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="card section reveal">
+        <h2>Spec sticker</h2>
+        <div class="sticker">
+          <div class="sticker-top">
+            <div class="sticker-title">My rig</div>
+            <div class="sticker-id">UNIT: R1Q-5900X · REV: 3070TI</div>
+          </div>
+
+          <div class="spec-grid">
+            <div class="spec-chip label-reveal" data-stagger="1">
+              <div class="spec-k">CPU <span class="spec-dot"></span></div>
+              <div class="spec-v">AMD Ryzen 9 5900X (12-Core)</div>
+              <div class="spec-note">Balanced: performance + stability.</div>
+            </div>
+
+            <div class="spec-chip label-reveal" data-stagger="2">
+              <div class="spec-k">GPU <span class="spec-dot"></span></div>
+              <div class="spec-v">NVIDIA GeForce RTX 3070 Ti</div>
+              <div class="spec-note">Drivers updated when stable (not rushed).</div>
+            </div>
+
+            <div class="spec-chip label-reveal" data-stagger="3">
+              <div class="spec-k">RAM <span class="spec-dot"></span></div>
+              <div class="spec-v">32GB</div>
+              <div class="spec-note">Headroom for multitask + dev.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card section reveal">
+        <h2>What’s inside</h2>
+        <div class="grid">
+          <div class="tile">
+            <p class="t">Clean + Check toolkit</p>
+            <p class="p">Temp cleanup, Defender checks, update shortcuts.</p>
+          </div>
+          <div class="tile">
+            <p class="t">Troubleshooting notes</p>
+            <p class="p">Fast “what to try first” steps for Windows issues.</p>
+          </div>
+          <div class="tile">
+            <p class="t">Build mindset</p>
+            <p class="p">Stable, quiet, fast — without breaking the OS.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer moved OUTSIDE main so it can sit at bottom -->
+  <footer class="footer-block reveal">
+    <div class="footer-grid">
+      <nav class="footer-tabs left" aria-label="Footer navigation left">
+        <a class="footer-tab" data-nav href="/home/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 10.5l9-7 9 7"></path><path d="M9 22V12h6v10"></path>
+          </svg>
+          Home
+        </a>
+        <a class="footer-tab" data-nav href="/tools/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path>
+          </svg>
+          Tools
+        </a>
+      </nav>
+
+      <div class="footer-center">© 2026 RALF1Q — ALL RIGHTS RESERVED</div>
+
+      <nav class="footer-tabs right" aria-label="Footer navigation right">
+        <a class="footer-tab" data-nav href="/changelog/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 19V5"></path><path d="M8 19V9"></path><path d="M12 19v-7"></path><path d="M16 19v-4"></path><path d="M20 19V7"></path>
+          </svg>
+          Changelog
+        </a>
+        <a class="footer-tab" data-nav href="/about/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 12h.01"></path><path d="M12 16v-4"></path>
+            <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"></path>
+          </svg>
+          About
+        </a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
