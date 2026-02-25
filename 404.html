@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>404 — ralf1q</title>
+  <meta name="robots" content="noindex" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <div class="fx" aria-hidden="true">
+    <canvas id="particles"></canvas>
+    <div class="scanlines"></div>
+    <div class="noise"></div>
+  </div>
+
+  <header>
+    <div class="nav">
+      <div class="brand">
+        <span class="mark"></span>
+        <a href="/home/">RALF1Q</a>
+      </div>
+      <nav class="links">
+        <a data-nav href="/home/">Home</a>
+        <a data-nav href="/tools/">Tools</a>
+        <a data-nav href="/changelog/">Changelog</a>
+        <a data-nav href="/about/">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="stack">
+      <section class="card hero-main reveal" style="padding:22px; overflow:hidden;">
+        <div class="kicker">
+          <span class="pill hot">ERROR</span>
+          <span class="pill">PATH NOT FOUND</span>
+          <span class="pill">404</span>
+        </div>
+
+        <h1 class="h1" style="margin-top:14px;">
+          <span class="glitch" data-text="Signal lost.">Signal lost.</span>
+        </h1>
+
+        <p class="sub" style="margin-top:10px;">
+          This route doesn’t exist on <strong>ralf1q.lat</strong>. Either the link is wrong,
+          or the page got moved.
+        </p>
+
+        <div class="actions">
+          <a class="btn primary" href="/home/">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 10.5l9-7 9 7"></path><path d="M9 22V12h6v10"></path>
+            </svg>
+            Return home
+          </a>
+          <a class="btn" href="/tools/">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path>
+            </svg>
+            Tools
+          </a>
+          <button class="btn" id="copyPath" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M8 7h11"></path><path d="M8 12h11"></path><path d="M8 17h11"></path>
+              <path d="M5 7h.01"></path><path d="M5 12h.01"></path><path d="M5 17h.01"></path>
+            </svg>
+            Copy URL
+          </button>
+        </div>
+
+        <div class="terminal" style="margin-top:16px;">
+          <div class="term-top">
+            <div class="term-dots">
+              <span class="dot"></span><span class="dot"></span><span class="dot c"></span>
+            </div>
+            <div class="term-title">diagnostic / 404</div>
+          </div>
+          <div class="term-body">
+            <div id="diagOut">
+              <div><span class="prompt">ralf1q@net</span>:~$ <span style="opacity:.9">route --resolve</span></div>
+              <div style="opacity:.85">… scanning</div>
+              <div style="opacity:.85">… no match</div>
+              <div style="opacity:.85">status: <strong>404</strong></div>
+              <div style="opacity:.85">requested: <strong id="reqPath">/</strong></div>
+              <div style="opacity:.85">hint: try /home or /tools</div>
+            </div>
+            <span class="caret"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="card section reveal">
+        <h2>Quick links</h2>
+        <div class="grid">
+          <a class="tile" href="/home/" style="text-decoration:none;">
+            <p class="t">Home</p>
+            <p class="p">Main landing page.</p>
+          </a>
+          <a class="tile" href="/tools/" style="text-decoration:none;">
+            <p class="t">Tools</p>
+            <p class="p">Download scripts and utilities.</p>
+          </a>
+          <a class="tile" href="/changelog/" style="text-decoration:none;">
+            <p class="t">Changelog</p>
+            <p class="p">Updates + releases.</p>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Same footer block -->
+  <footer class="footer-block reveal">
+    <div class="footer-grid">
+      <nav class="footer-tabs left" aria-label="Footer navigation left">
+        <a class="footer-tab" data-nav href="/home/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 10.5l9-7 9 7"></path><path d="M9 22V12h6v10"></path>
+          </svg>
+          Home
+        </a>
+        <a class="footer-tab" data-nav href="/tools/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path>
+          </svg>
+          Tools
+        </a>
+      </nav>
+
+      <div class="footer-center">© 2026 RALF1Q — ALL RIGHTS RESERVED</div>
+
+      <nav class="footer-tabs right" aria-label="Footer navigation right">
+        <a class="footer-tab" data-nav href="/changelog/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 19V5"></path><path d="M8 19V9"></path><path d="M12 19v-7"></path><path d="M16 19v-4"></path><path d="M20 19V7"></path>
+          </svg>
+          Changelog
+        </a>
+        <a class="footer-tab" data-nav href="/about/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 12h.01"></path><path d="M12 16v-4"></path>
+            <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"></path>
+          </svg>
+          About
+        </a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+
+  <script>
+    // Fill requested path + copy URL button
+    const req = document.getElementById("reqPath");
+    if (req) req.textContent = location.pathname + location.search + location.hash;
+
+    const btn = document.getElementById("copyPath");
+    if (btn) {
+      btn.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(location.href);
+          btn.textContent = "Copied ✓";
+          setTimeout(() => (btn.textContent = "Copy URL"), 1200);
+        } catch {
+          btn.textContent = "Copy failed";
+          setTimeout(() => (btn.textContent = "Copy URL"), 1200);
+        }
+      });
+    }
+  </script>
+</body>
+</html>
